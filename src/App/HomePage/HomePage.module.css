@@ -1,0 +1,42 @@
+.colorSchemeToggle {
+  float: right;
+  top: var(--mantine-spacing-xs);
+  right: var(--mantine-spacing-xs);
+}
+
+.pageContainer {
+  height: 100vh;
+
+  padding: var(--mantine-spacing-xl);
+  padding-bottom: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mantine-spacing-xl);
+
+  /**
+    Mantine variables cannot be accessed in media queries i.e. var(--mantine-breakpoint-sm)
+    @see https://mantine.dev/styles/responsive/#breakpoints-variables-in-css-modules
+   **/
+  @media (max-width: 62em) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.mugshotContainer {
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 10px solid var(--mantine-primary-color-3);
+  overflow: hidden;
+
+  .mugshot {
+    filter: brightness(90%) contrast(90%);
+  }
+}
+
+.icon {
+  width: 70%;
+  height: 70%;
+}
