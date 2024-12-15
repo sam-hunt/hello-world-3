@@ -31,7 +31,7 @@ export const HomePage = () => {
           <Title order={2} style={{ fontSize: '3rem' }}>
             I'm Sam Hunt
           </Title>
-          <Text size="lg">A full stack web dev from New Zealand, interested in software design, science fiction, and game dev</Text>
+          <Text size="lg">A full stack web dev from New Zealand interested in software design, science fiction, and game dev</Text>
           <Text size="xl" fw="bold" c="violet">
             Currently open to work!
           </Text>
